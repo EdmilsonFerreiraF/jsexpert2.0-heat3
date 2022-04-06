@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "chai": "4",
+    "lokijs": "1.5",
     "mocha": "8",
     "nyc": "15",
     "sinon": "9"
