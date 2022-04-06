@@ -15,5 +15,16 @@ describe('todo', () => {
 
             expect(result).to.be.not.ok
         })
+        it('should return invalid when creating an object with invalid "when" property', () => {
+            const data = {
+                text: 'Hello world',
+                when: new Date("20-12-01")
+            }
+
+            const todo = new Todo(data)
+            const result = todo.isValid()
+
+            expect(result).to.be.not.ok
+        })
     })
 })
