@@ -1,0 +1,17 @@
+{
+  "name": "jsexpert2.0-heat3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --parallel --exit test/",
+    "test:dev": "npx mocha test/ -w",
+    "test:cov": "npx nyc --reporters=html,text yarn test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chai": "4",
+    "mocha": "8",
+    "nyc": "15",
+    "sinon": "9"
+  }
+}
